@@ -32,7 +32,10 @@ Sequência de comandos:
     "gera o local host para visualização e testes"
     > npm run dev
 ```
+>Todos os commits que fiz do projeto passaram a atender a biblioteca de commit **[gitmoji](https://gitmoji.dev/)** para utilizar basta usar o comando **`$ npm i -g gitmoji-cli`** no terminal e aguardar o instalador dos pacotes. A documentação do uso dos commits está no site citado acima.
+
 ## **Descrição da Evolução do Projeto**
+Como o foco do projeto está voltado para o Javascript e como utiliza-lo para fins de programação total do site, a biblioteca Vite.JS foi utilizada para criação do site e todo seu comportamento dinâmico.
 
 ## **Prévia do Jogo**
 

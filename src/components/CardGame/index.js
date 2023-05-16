@@ -1,7 +1,9 @@
+import "./style.css";
+
 function CardGame() {
     return `
-        <article>
-            CardGame - Oi hehehe
+        <article class="card-game">
+            <img src="./src/images/alura-pixel.svg" alt="logo da Alura em pixel art">
         </article>
     `;
 }
