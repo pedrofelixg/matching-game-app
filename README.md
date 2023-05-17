@@ -37,6 +37,24 @@ Sequência de comandos:
 ## **Descrição da Evolução do Projeto**
 Como o foco do projeto está voltado para o Javascript e como utiliza-lo para fins de programação total do site, a biblioteca Vite.JS foi utilizada para criação do site e todo seu comportamento dinâmico.
 
+**Componente Card**
+Seguindo o projeto do figma e as instruções do Marco Bruno, o card foi criado através de uma função no JS que retornava uma tag HTML que era inserida no `D.O.M` através da função `insertAdjacentHTML("beforeend", $variávelComAFunction);` esse comportamento é da própria linguagem, próxima ao que o ReactJS faz com a extensão `.jsx`.
+Já a estilização foi feita via CSS, com uma arquitetura de pasta específica, o documento `style.css` na pasta _src/components/CardGame/_ oferece os estilos específicos para os Cards, e as configurações do css, são específicadas em caminhos distintos:
+
+>![arquitetura de pastas da configuração do css](/public/img/arquitetura_do_css.png)
+
+a repetição do componente dos cards foi feita, inicialmente através de uma função como parte de um desafio proposto pelo Marco, nesse estágio inicial não sabia qual seria a maneira que ele faria, e ainda haveria estudos sobre a viabilidade da manutenção desse código. A função usada foi:
+
+<code type="javascript">
+  function insertCard () {
+    for (let i = 0; i < 6; i++) {
+        $root.insertAdjacentHTML("beforeend", $htmlCardGame);
+    }
+}
+
+insertCard();
+</code>
+
 ## **Prévia do Jogo**
 
 <img src="./public/img/start%20game.png" width="200px">
